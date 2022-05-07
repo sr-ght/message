@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Message">
         <activity
+            android:name=".view.activity.SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.activity.WelcomeActivity"
-            android:theme="@style/Theme.Splash"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3,6 +3,7 @@ package com.tibe.message.view.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.tibe.message.R;
@@ -24,5 +25,13 @@ public class WelcomeActivity extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        clickable();
+    }
+
+    private void clickable() {
+        binding.buttonSignIn.setOnClickListener(v ->{
+            startActivity(new Intent(this, SignInActivity.class));
+        });
     }
 }

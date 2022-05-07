@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Message">
         <activity
-            android:name=".view.activity.MainActivity"
+            android:name=".view.activity.WelcomeActivity"
             android:theme="@style/Theme.Splash"
             android:exported="true">
             <intent-filter>
